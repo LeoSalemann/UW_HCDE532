@@ -1,0 +1,140 @@
+﻿<!-- HtmlView:on, console:off -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Leo Salemann | Contact</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Agile Coach Portfolio with Projects, Papers, Resume, Code Repo links and LinkedIn Profile" />
+    <meta name="author" content="Leo J. Salemann" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="http://students.washington.edu/leos/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- begin content container -->
+    <div id="content">
+
+        <!-- Same Header for all pages-->
+        <header>
+            <!-- Small headshot, floating to left, with three lines of text on right-->
+            <a href="index.html">
+                <img class="headerImage" src="images/leo-headshot-tshirt-3098.jpg"
+                     alt="Leo's Headshot" />
+            </a>
+
+            <h1 class="headLineText">Leo Salemann</h1>
+            <h2 class="byLineText">Agile Coach, Technical Leader, Lifelong Learner</h2>
+            <p class="tagline">Helping cat-herds become wolf-packs</p>
+
+            <!-- Single-level menu-->
+            <nav>
+                <ul class="nav" id="menu-items">
+                    <li class="nav not4mobile"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="projects.html">Projects</a></li>
+                    <li class="nav"><a href="papers.html">Papers</a></li>
+                    <li class="nav not4mobile"><a href="resume.html">Resume</a></li>
+                    <li class="nav not4mobile"><a class="active" href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="code.html">Code</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Header -->
+        <!-- begin HTML5 content container -->
+        <main>
+            <h1>Let's Connect</h1>
+
+            <!-- SECTION ONE: SOCIAL MEDIA LINKS WITH FONT AWESOME -->
+            <section>
+                <h2 class="contact">
+                    <!-- Use of aria-hidden, title & span per accessiblity guidelines at -->
+                    <!-- https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility -->
+                    I'm almost always on
+                    <a href="https://www.linkedin.com/in/leo-salemann-303293a/">
+                        <i aria-hidden="true" class="fab fa-linkedin" title=" LinkedIn"></i>
+                        <span class="sr-only">Linked In</span>
+                    </a>
+                </h2>
+                <h2 class="contact">
+                    Sometimes I also use
+                    <a href="http://twitter.com/leosalemann">
+                        <i aria-hidden="true" class="fab fa-twitter-square" title="Twitter"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </h2>
+            </section>
+
+            <!-- SECTION TWO: EMAIL FORM-->
+            <!-- <section style="margin-top: 5px;">
+    <h2 class="contact">
+        Or send me an email! All fields required.
+    </h2>
+    <!-- Begin Contact Form -->
+            <!-- you can "style" this form by changing colors, type, etc -->
+            <!--    <form method="post" name="contactform" action="https://formspree.io/drecirojet@memsg.site"> -->
+            <!-- this form is based on a freemium service; you will need to validate your email before use -->
+            <!--<label for="name">
+        Your name:
+    </label>
+    <input name="name" id="name" type="text" required="required">
+    <br />
+    <label for="email">
+        Your email:
+    </label>
+    <input name="email" id="email" type="email" required="required">
+    <br />
+    <label for="message">
+        Message:
+    </label>
+    <br />
+
+    <textarea name="message" id="message" required="required">
+            </textarea>
+    <br />
+    <input name="submit" id="submit" type="submit" value="Send your message!">
+    </form>-->
+            <!-- End Contact Form -->
+            <!--    </section> -->
+        </main>
+        <!-- */End Content Container -->
+        <!-- Every Page Has a Footer -->
+        <!-- flexgrid based on codepen example
+        https://codepen.io/team/css-tricks/pen/EKEYob
+        -->
+        <footer>
+            <ul class="footerContainer">
+                <li class="footerItem">©2020 Leo Salemann All rights reserved.</li>
+                <li class="footerItem">
+                    <a class="buttonLink" href="resume.html">Resume</a>
+                    <a class="footerFontAwsome"
+                       href="https://www.linkedin.com/in/leo-salemann-303293a/">
+                        <i aria-hidden="true" class="fab fa-lg fa-linkedin" title=" LinkedIn"></i>
+                    </a>
+                    <span class="sr-only">Linked In</span>
+                    <a class="buttonLink" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- End Footer -->
+
+        <script>
+            // Code for validating the form
+            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+            // for details
+            var frmvalidator = new Validator("contactform");
+            frmvalidator.addValidation("name", "req", "Please provide your name");
+            frmvalidator.addValidation("email", "req", "Please provide your email");
+            frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+        </script>
+        <!--
+        Sample code from:
+        http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+        -->
+    </div>
+    <!-- */End Content Container -->
+</body>
+</html>

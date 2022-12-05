@@ -1,0 +1,51 @@
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%
+}
+
+input, textarea, select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    /*
+input:focus {
+    background-color: #abebc6;
+}
+input:active {
+        background-color: #f1948a;
+}
+
+
+:disabled {
+    background-color: #bbb;
+}
+    */
+
+    input[type="checkbox"]:checked + label {
+        background-color: #fcf3cf;
+    }
+
+/*
+    input[type="number"]:valid {
+        border: 5px solid green;
+    }
+
+    input[type="number"]:invalid {
+        border: 5px solid red;
+    }
+
+
+    input[type="number"]:in-range {
+        border: 5px solid green;
+    }
+
+    input[type="number"]:out-of-range {
+        border: 5px solid red;
+    }
+
+        */
+input:required {
+    border: 2px solid purple;
+}
+
+

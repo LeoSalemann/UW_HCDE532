@@ -1,0 +1,33 @@
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+input, textarea, select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+fieldset {
+    color: orange;
+}
+
+legend {
+    color: green;
+}
+/*
+input[type="file"] {
+    font-size: 0.5em;
+    color: red;
+    padding-top: .5em;
+}
+
+label {
+    color: blue;
+    font-weight: bold;
+}
+
+input[type="date"] + label {
+    color: orange;
+}
+    */
+    

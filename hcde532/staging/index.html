@@ -1,0 +1,201 @@
+﻿<!-- HtmlView:on, console:off -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Leo Salemann | Home Page</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Agile Coach Portfolio with Projects, Papers, Resume, Code Repo links and LinkedIn Profile" />
+    <meta name="author" content="Leo J. Salemann" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="http://students.washington.edu/leos/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- *************** SPECIAL CSS FOR CODEPEN-BASED CAROUSEL, UNIQUE TO THIS PATE *************-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,300,400,700"rel="stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+
+<body>
+    <!-- begin content container -->
+    <div id="content">
+
+        <!-- Same Header for all pages-->
+        <header>
+            <!-- Small headshot, floating to left, with three lines of text on right-->
+            <a href="index.html">
+                <img class="headerImage" src="images/leo-headshot-tshirt-3098.jpg"
+                     alt="Leo's Headshot" />
+            </a>
+
+            <h1 class="headLineText">Leo Salemann</h1>
+            <h2 class="byLineText">Agile Coach, Technical Leader, Lifelong Learner</h2>
+            <p class="tagline">Helping cat-herds become wolf-packs</p>
+
+            <!-- Single-level menu-->
+            <nav>
+                <ul class="nav" id="menu-items">
+                    <li class="nav not4mobile"><a class="active" href="index.html">Home</a></li>
+                    <li class="nav"><a href="projects.html">Projects</a></li>
+                    <li class="nav"><a href="papers.html">Papers</a></li>
+                    <li class="nav not4mobile"><a href="resume.html">Resume</a></li>
+                    <li class="nav not4mobile"><a href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="code.html">Code</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Header -->
+
+        <main>
+            <!--
+            Home page has two major elements: an "About me Paragraph" and a carousel of links to projects and papers.
+            The two elments are items in an unordered list, which is displayed as a flex grid, giving you two columns
+                in ultra-wide displays, and a single coloumn in regular/mobile.
+
+                The carouse (thanks to CodePen!) is also responsive, stretching from one, two, 3 or more "cards"
+                depending on how much room it has.
+                -->
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <!-- Wierd stylesheet problem forces me to put someting before the h1 -->
+                    <h1>Hello!</h1>
+
+                    <p>
+                        I'm an Agile Coach, practicing Distributed Scrum since 2010, turning cat-herds into wolf-packs. Certified SAFe Release Train Engineer, PMI Agile Certified Practitioner, Lean Six Sigma Green Belt.  Experienced, energetic Agile Project Manager with proven success in leading multi-functional teams, delivering complex platforms and services. Compassionate Technical Leader, helping teams turn amorphous piles of to-dos into a prioritized queue to deliver maximum value at a sustainable pace. Concise communicator, comfortable public speaker. Prolific inventor with ten patents and ten published research papers.
+                    </p>
+                    <p>
+                        Check out one of my recent projects, in which I apply Agile Principles to a hardware project based with Arduino, balsa wood, and a flight simulator on Mobile Phone.
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <!-- ***************** CAROUSEL ******************** -->
+                    <!-- A Pen created at CodePen.io. You can find this one at
+                    https://codepen.io/ibrahimjabbari/pen/KapLLX. -->
+                    <!--
+                    Copyright (c) 2019 by Ibrahim Jabbari (https://codepen.io/ibrahimjabbari/pen/KapLLX)
+
+
+                    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+                    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                    -->
+
+                    <div class="v-centered">
+                        <div class="carousel">
+                            <div class="roll">
+                                <!-- *** PROJECT 1: ARDUINO FLIGHT SIMULATOR *** -->
+                                <div class="project">
+                                    <a href="projects.html#Arduino-Flight-Simulator">
+                                        <img src="images/teaching-arduinio-to-fly.jpg"
+                                             alt="PC Joystick connected to Arduino, which controls a motion platform." />
+                                        <h2>Teaching an Arduino to Fly</h2>
+                                    </a>
+                                    <p>An Arduino-Controlled Model Flight Simulator </p>
+                                </div>
+
+                                <!-- *** PROJECT 2 HOLOLENS HACKATHON ***-->
+                                <div class="project">
+                                    <a href="projects.html#HoloLens-Hackathon">
+                                        <img src="images/HoloLensUser.jpg"
+                                             alt="HoloLens User" />
+                                        <h2>Dead Switch Live</h2>
+                                    </a>
+                                    <p>A HoloLens Mixed Reality Project</p>
+                                </div>
+
+                                <!--*** PAPER 1: POLYGON-FREE MODELING & SIMULATION *** -->
+                                <div class="project">
+                                    <a href="papers.html#Polygon-Free-MS">
+                                        <img src="images/PolyFreeMS.png"
+                                             alt="Drone simulator flying over voxel terrain" />
+                                        <h2>
+                                            Polygon-Free <br />
+                                            Modeling &amp; Simulation
+                                        </h2>
+                                    </a>
+                                    <p> Flying a UAV simulator over voxel terrain. </p>
+                                </div>
+
+                                <!--*** PAPER 2: POLYGONS POINT-CLOUDS VOXELS *** -->
+                                <div class="project">
+                                    <a href="papers.html#Polygonss-Point-Clouds-Voxels">
+                                        <img src="images/PolysPointCloudsVoxels.jpg"
+                                             alt="Collage of terrain models including point cloud, poloygonal, and voxel models." />
+
+                                        <h2>Polygons, Point-Clouds, <br /> and Voxels</h2>
+                                    </a>
+                                    <p>Comparing Terrain Representations</p>
+                                </div>
+
+                                <!--*** PAPER 3: SMALLER, THINNER, FASTER: TERRAIN DBGS *** -->
+                                <div class="project">
+                                    <a href="papers.html#Smaller-Thinner-Faster">
+                                        <img src="images/SmallerThinerFaster.jpg"
+                                             alt="Collage of terrain models including point cloud, poloygonal, and voxel models." />
+
+                                        <h2>Smaller, Thinner, Faster</h2>
+                                    </a>
+                                    <p> The Evolution of Terrain  Generation Systems</p>
+                                </div>
+
+                                <!--*** PAPER 4: IMPROVMENTS IN COMPLEX TERAIN MODELING *** -->
+                                <div class="project">
+                                    <a href="papers.html#Improved-UHRB">
+                                        <img src="images/UrbanTerrain.jpg"
+                                             alt="Computer-generated Urban Terrain Model" />
+                                        <h2>
+                                            Improvements in Generating and <br />
+                                            Destroying Ultra-High Resolution <br />
+                                            Buildings
+                                        </h2>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="sections">
+                            </div>
+                            <button class="navigation" id="nav-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <button class="navigation" id="nav-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <!-- Load scripts -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                    <script src="./src/rl-carousel.js" async defer></script>
+                </li>
+            </ul>
+        </main>
+
+
+        <!-- Every Page Has a Footer -->
+        <!-- flexgrid based on codepen example
+        https://codepen.io/team/css-tricks/pen/EKEYob
+        -->
+        <footer>
+            <ul class="footerContainer">
+                <li class="footerItem">©2020 Leo Salemann All rights reserved.</li>
+                <li class="footerItem">
+                    <a class="buttonLink" href="resume.html">Resume</a>
+                    <a class="footerFontAwsome"
+                       href="https://www.linkedin.com/in/leo-salemann-303293a/">
+                        <i aria-hidden="true" class="fab fa-lg fa-linkedin" title=" LinkedIn"></i>
+                    </a>
+                    <span class="sr-only">Linked In</span>
+                    <a class="buttonLink" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+    <!-- */End Content Container -->
+</body>
+<script src="js/index.js"></script>
+</html>

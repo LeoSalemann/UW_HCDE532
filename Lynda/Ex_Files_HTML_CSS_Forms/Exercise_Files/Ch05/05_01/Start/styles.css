@@ -1,0 +1,39 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+label {
+    display: block;
+}
+
+input[type="checkbox"]+label {
+    display: inline;
+}
+
+fieldset {
+    border-width: 0px;
+    padding: 0px
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 90%;
+    margin: 0.2em auto 0.8em auto;
+}
+
+select, fieldset {
+    width: 90%;
+    margin: 0.2em auto 0.8em auto;
+}
+#zip {
+    max-width: 10em;
+}
+
+legend {
+    margin-left: -.5em;
+    font-weight: bold;
+}

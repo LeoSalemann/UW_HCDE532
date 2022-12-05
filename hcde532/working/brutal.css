@@ -1,0 +1,120 @@
+﻿/*
+    This stylesheet is inspired by https://www.uxbrutalism.com/
+*/
+
+body {
+    font-family: Fira Mono, Courier New, Courier, monospace;
+    font-size: 15px;
+}
+
+header {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+/* nav elements based on Lynda.com course "Creating CSS Only Navigation menus"
+   https://www.lynda.com/CSS-tutorials/Design-Web-Creating-CSS-Only-Navigation-Menus/424044-2.html
+*/
+
+
+nav { /* overall nav region */
+    background-color: #000000;
+    color: #FFFFFF;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+}
+
+nav ul { /* basic stylines for all menu items.*/
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+
+nav > ul > li { /* top-level menu items (the onse you see in the menu bar */
+    float: left;
+}
+
+nav ul::after { /* pseudo element to clear the float & replace with block elements*/
+    content: '';
+    display: block;
+    clear: both;
+}
+
+    /*top-levem menu stays hlighted when hovering on sub-menus.*/
+
+nav ul li:hover { /* this should make the selected top-level menu retain black-on-white*/
+    color: #FFFFFF;
+    background-color: #000000;
+}
+        
+
+nav ul li:hover > ul { /*display sub-menus only when hovering*/
+    display: block;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul li a { /* Menu Labels (i.e. anchor links within our menu list items.*/
+    display: inline-block;
+    color: #FFFFFF;  /* white text */
+    background-color: #000000;  /* black background */
+    border-width: 0.1px; /* thin solid black border */
+    border-style: solid;
+    border-color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+}
+
+
+nav ul li a:hover { /* flip the menu colors when user hovers*/
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+nav ul ul { /* hide sub-menus when not hovering */
+    display: none;
+}
+ 
+
+
+    
+content {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+footer {
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer a:link {
+    color: #d00bf6;
+}
+
+footer a:visited {
+    color: #808080;
+}
+
+
+@media screen and (max-width: 750px) {
+    nav {
+        padding: 70px 0px 0px 10px;
+    }
+
+        nav > ul {
+            padding-left: 0px;
+            padding-right: 20px;
+        }
+
+            nav > ul > li > a {
+                padding: 8px 12px 10px 12px;
+            }
+}
+   

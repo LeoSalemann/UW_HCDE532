@@ -1,0 +1,192 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin:0;
+  background-color: #f4f4f4;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header{
+  background: #353637;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #32a0c2 3px solid;
+}
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float: left;
+}
+header #branding h1{
+  margin: 0;
+}
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+header .highlight, header .current a{
+  color: #32a0c2;
+  font-weight: bold;
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background:url('./DeathtoStock-chalkboard-1000px.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#showcase p{
+  font-size: 20px;
+}
+
+
+/* Newsletter */
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background: #353637;
+}
+#newsletter h1{
+  float: left;
+}
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #32a0c2;
+  background: #a1e0f4;
+}
+ul#services h3{
+  border-bottom: #353637 solid 1px;
+}
+
+
+
+.button_1{
+  height: 38px;
+  background: #cccccc;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #353637;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #32a0c2;
+  text-align: center;
+}
+
+  #boxes .box,
+   article#main-col,
+  aside#sidebar {
+    float: none;
+    float: left; 
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+  }  
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+  } 
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top: 40px;
+  }
+  #newsletter button {
+    display: block;
+    width: 100%;
+  }
+#newsletter form input[type="email"],
+  .contact input,
+  .contact textarea,
+  .contact label{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }  
+}
+
+

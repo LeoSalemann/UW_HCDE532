@@ -1,0 +1,272 @@
+﻿<!-- HtmlView:on, console:off -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Leo Salemann | Papers</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Agile Coach Portfolio with Projects, Papers, Resume, Code Repo links and LinkedIn Profile" />
+    <meta name="author" content="Leo J. Salemann" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="http://students.washington.edu/leos/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- begin content container -->
+    <div id="content">
+
+        <!-- Same Header for all pages-->
+        <header>
+            <!-- Small headshot, floating to left, with three lines of text on right-->
+            <a href="index.html">
+                <img class="headerImage" src="images/leo-headshot-tshirt-3098.jpg"
+                     alt="Leo's Headshot" />
+            </a>
+
+            <h1 class="headLineText">Leo Salemann</h1>
+            <h2 class="byLineText">Agile Coach, Technical Leader, Lifelong Learner</h2>
+            <p class="tagline">Helping cat-herds become wolf-packs</p>
+
+            <!-- Single-level menu-->
+            <nav>
+                <ul class="nav" id="menu-items">
+                    <li class="nav not4mobile"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="projects.html">Projects</a></li>
+                    <li class="nav"><a class="active" href="papers.html">Papers</a></li>
+                    <li class="nav not4mobile"><a href="resume.html">Resume</a></li>
+                    <li class="nav not4mobile"><a href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="code.html">Code</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Header -->
+
+        <main>
+            <h1>Papers</h1>
+
+            <!--
+            Rather than sections, this page is divided into list items. I'm assuming
+                the list items provide the same semantic divisions that sections would, so I'm trying to avoid redundancy.
+            -->
+            <ul class="flex-container">
+                <li class="flex-item" id="Polygon-Free-MS">
+                    <!--==============================================================
+                    POLYGON-FREE MODELING & SIMULATION (10F-SIW-036)
+                    ==================================================================-->
+
+                    <img src="images/PolyFreeMS.png"
+                         alt="Drone simulator flying over voxel terrain" />
+                    <h2>Polygon-Free Modeling &amp; Simulation </h2>
+                    <h3>Presented at the 2010 Fall Simulation Interoperablity Workshop</h3>
+
+
+                    <p>
+                        In <a href="https://www.sisostds.org/DesktopModules/Bring2mind/DMX/API/Entries/Download?Command=Core_Download&EntryId=28745&PortalId=0&TabId=105"> Polygons, Point-Clouds, and Voxels, a Comparison of High-Fidelity Terrain Representations,</a> we
+                        made a case for sparse and octree voxel models as a space-efficient means of representing high-resolution terrain. In
+                        this paper, we will show how this terrain representation can form the basis of a new generation of live, virtual, and
+                        constructive (LVC) simulation systems, which can execute directly on a volumetric runtime terrain representation. We
+                        will begin with an examination of the terrain generation process, and demonstrate how a voxel-based terrain
+                        representation can be more conducive to fusion of “fresh-from-sensor” geospatial data when compared to
+                        conventional polygon-based terrain representation. We will then look at the terrain extent and content requirements
+                        of some typical LVC simulation systems, and derive analogous requirements in terms of voxel-count and resolution.
+                        Finally, we will establish some performance requirements for real-time visualization and terrain queries, and survey
+                        some available technologies to help reach these performance goals.
+                    </p>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=32022">Download the slides.</a>
+
+                    <a href="https://www.sisostds.org/DesktopModules/Bring2mind/DMX/API/Entries/Download?Command=Core_Download&EntryId=32023&PortalId=0&TabId=105">Read the  paper.</a>
+
+                    <a href="https://www.sisostds.org/workshops/SISOWorkshops/2010FallSIW.aspx">Learn more about the workshop.</a>
+
+                    <!-- </section> -->
+
+                </li>
+                <li class="flex-item" id="Polygonss-Point-Clouds-Voxels">
+                    <!--===================================================================
+                    POLYGONS, POINT-CLOUDS AND VOXELS: Compare Hi-fi Terrain (09F-SIW-064)
+                    =======================================================================-->
+                    <img src="images/PolysPointCloudsVoxels.jpg"
+                         alt="Collage of terrain models including point cloud, poloygonal, and voxel models." />
+                    <h2>
+                        Polygons, Point-Clouds, and Voxels<br /> A Comparison of High-Fidelity Terrain
+                        Representations
+                    </h2>
+                    <h3>
+                        Presented at the 2009 Fall Simulation Interoperablity Workshop
+                    </h3>
+
+
+                    <p>
+                        Polygonal representations have proven to be an efficient means of representing terrain
+                        environments at current levels of fidelity. Regular Triangulated Networks (RTNs) are a computationally-efficient
+                        means of capturing all posts in an elevation raster, while Triangulated Irregular Networks (TINs) can provide a
+                        more natural terrain appearance with fewer polygons. Both of these representations have done well at modeling
+                        terrain from sensor data with 1-meter or larger ground separation distance, but what happens when such data
+                        are available at decimeter, centimeter, or even sub-centimeter resolution? Is there a “cross-over” point where
+                        non-polygonal representations can capture 3D gridded earth measurements with less storage, and/or in a manner
+                        conducive to faster queries or rendering? This paper will compare the effectiveness of polygons, point-clouds, and
+                        voxels at representing ultra-high resolution terrain environments. We will compare the storage footprint of a
+                        high-resolution terrain data set in point-cloud, polygonal, voxel-grid, sparse voxel and octree voxel forms.
+                        modeling and simulation..
+                    </p>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=28746">
+                        Download the slides.
+                    </a>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=28745">
+                        Read the  paper.
+                    </a>
+
+                    <a href="https://www.sisostds.org/workshops/SISOWorkshops/2009FallSIW.aspx">Learn more about the workshop.</a>
+
+                </li>
+                <li class="flex-item" id="Smaller-Thinner-Faster">
+                    <!--===================================================================
+                        SMALLER, THINNER, FASTER: EVOLUTION OF TERRAIN DBGS (06F-SIW-031)
+                    =======================================================================-->
+                    <img src="images/SmallerThinerFaster.jpg"
+                         alt="Collage of terrain models including point cloud, poloygonal, and voxel models." />
+                    <h2>
+                        Smaller, Thinner, Faster: The Evolution of Terrain Database Generation Systems
+                    </h2>
+                    <h3>
+                        2006 Fall Simulation Interoperability Workshop
+
+                    </h3>
+
+
+                    <p>
+                        Various factors have influenced the evolution of Terrain Database Generation Systems (DBGS) over the
+                        years. Changes in source data types, simulator capabilities, and database production requirements have led to tools
+                        with very different capabilities. The “natural history” of terrain database generation systems can be decomposed into
+                        “eras,” each with its own set of terrain database (TDB) generation requirements and resulting DBGS capabilities. For
+                        purposes of discussion, this paper will define these eras as the 3D Visualization Era, with its emphasis on manual construction of 3D terrain databases; Early and Late Geographic Information Systems (GIS) Eras, marked by the availability of electronic vector data sources and the rise of constructive simulation; and finally the current era of Source
+                        Proliferation, in which quality electronic data is widely available, and the emphasis is on systems that pull from multiple data providers and push to multiple consumers – with a minimal turnaround time in between. The paper will conclude with a description of our response to the requirements of the Source Proliferation Era – the Organic Geospatial
+                        Repository.
+                    </p>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=27102">
+                        Download the slides.
+                    </a>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=27101">
+                        Read the  paper.
+                    </a>
+
+                    <a href="https://www.sisostds.org/workshops/SISOWorkshops/2006FallSIW.aspx">
+                        Learn more about the workshop.
+                    </a>
+
+                </li>
+                <li class="flex-item" id="Improved-UHRB">
+                    <!--===================================================================
+                       IMPROVMENTS IN GENERATING/DESTORING ULTRA HI-RES BUILDINGS (05F-SIW-001)
+                    =======================================================================-->
+                    <img src="images/UrbanTerrain.jpg"
+                         alt="Computer-generated Urban Terrain Model" />
+
+                    <h2>Improvements in Generating and Destroying Ultra-High Resolution Buildings</h2>
+                    <h3>2005 Fall Simulation Interoperability Workshop</h3>
+
+
+                    <p>
+                        In previous work, we have described the Automated Building Generation System (ABGS), a methodology
+                        for generating complex buildings for urban environments from minimal data. The ABGS is completely configurable,
+                        creating geotypical buildings when only footprint information is known, geospecific buildings when exact interior and
+                        attribution is available, or any level of fidelity in between. We also introduced the Ultra-High Resolution Building
+                        Simulator (UHRBSim); a real-time damage simulator for buildings constructed in an open XML/X3D format, such as
+                        those produced by ABGS.
+                    </p>
+                    <p>
+                        In this paper, we discuss recent improvements to the ABGS and UHRBSim systems. The ABGS has undergone a first
+                        round of optimization to increase the building generation speed by an order of magnitude. Functionally, ABGS has
+                        been extended to produce elevator shafts, stairwells, below-ground level floors such as basements or parking areas, and
+                        shaped roofs. All features conform to the UHRB Environmental Data Model (EDM), which is a subset of the OneSAF
+                        Object System (OOS) EDM.
+                    <p>
+                        Additionally, the ABGS now produces a supports relationship, which describes structural support between various
+                        components of a UHRB. Although we have a default set of relationships in the ABGS, the relationship format is completely flexible and can be applied directly to any building construction model; for example, a dropped ceiling which is
+                        supported by the subfloor above.
+                    </p>
+                    <p>
+                        The UHRBSim damages all new ABGS features, and calculates secondary damage based on the supports relationships.
+                        Such damage may be recursive, with a single shot being the proverbial straw that brings down the entire structure. In
+                        addition, the UHRBSim creates and coalesces rubble piles as structures are damaged, affecting building accessibility
+                        and mobility, and potentially disabling any units underneath.
+                    </p>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=26350">
+                        Download the slides.
+                    </a>
+
+                    <a href="https://www.sisostds.org/DigitalLibrary.aspx?Command=Core_Download&EntryId=26349">
+                        Read the  paper.
+                    </a>
+
+                    <a href="https://www.sisostds.org/workshops/SISOWorkshops/2005FallSIW.aspx">
+                        Learn more about the workshop.
+                    </a>
+                </li>
+
+                <!--===================================================================
+                  NEXT PAPER (A COMMENTED-OUT TEMPLATE FOR FUTURE PAPERS)
+                =======================================================================-->
+                <!--
+                <li class="flex-item" id="Paper-Title">
+
+                    \<p class="imagebox" style="width: 100%; height: 300px;">Paper Hero Image</p>
+
+                    <h2>Paper Tiltle</h2>
+                    <h3>where it was prsented</h3>
+
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+
+                    <a href="">
+                        Download the slides.
+                    </a>
+
+                    <a href="\">
+                        Read the  paper.
+                    </a>
+
+                    <a href="\">
+                        Learn more about the workshop.
+                    </a>
+                </li>
+                -->
+            </ul>
+            <!-- End flex-continer -->
+        </main>
+
+
+        <!-- Every Page Has a Footer -->
+        <!-- flexgrid based on codepen example
+        https://codepen.io/team/css-tricks/pen/EKEYob
+        -->
+        <footer>
+            <ul class="footerContainer">
+                <li class="footerItem">©2020 Leo Salemann All rights reserved.</li>
+                <li class="footerItem">
+                    <a class="buttonLink" href="resume.html">Resume</a>
+                    <a class="footerFontAwsome"
+                       href="https://www.linkedin.com/in/leo-salemann-303293a/">
+                        <i aria-hidden="true" class="fab fa-lg fa-linkedin" title=" LinkedIn"></i>
+                    </a>
+                    <span class="sr-only">Linked In</span>
+                    <a class="buttonLink" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+    <!-- */End Content Container -->
+</body>
+</html>

@@ -1,0 +1,232 @@
+﻿<!-- HtmlView:on, console:off -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Leo Salemann | Projects</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Agile Coach Portfolio with Projects, Papers, Resume, Code Repo links and LinkedIn Profile" />
+    <meta name="author" content="Leo J. Salemann" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="http://students.washington.edu/leos/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- begin content container -->
+    <div id="content">
+
+        <!-- Same Header for all pages-->
+        <header>
+            <!-- Small headshot, floating to left, with three lines of text on right-->
+            <a href="index.html">
+                <img class="headerImage" src="images/leo-headshot-tshirt-3098.jpg"
+                     alt="Leo's Headshot" />
+            </a>
+
+            <h1 class="headLineText">Leo Salemann</h1>
+            <h2 class="byLineText">Agile Coach, Technical Leader, Lifelong Learner</h2>
+            <p class="tagline">Helping cat-herds become wolf-packs</p>
+
+            <!-- Single-level menu-->
+            <nav>
+                <ul class="nav" id="menu-items">
+                    <li class="nav not4mobile"><a href="index.html">Home</a></li>
+                    <li class="nav"><a class="active" href="projects.html">Projects</a></li>
+                    <li class="nav"><a href="papers.html">Papers</a></li>
+                    <li class="nav not4mobile"><a href="resume.html">Resume</a></li>
+                    <li class="nav not4mobile"><a href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="code.html">Code</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Header -->
+
+        <main>
+            <h1>Projects</h1>
+
+            <!--
+            Rather than sections, this page is divided into list items. I'm assuming
+                the list items provide the same semantic divisions that sections would, so I'm trying to avoid redundancy.
+            -->
+            <ul class="flex-container">
+                <!--==============================================================
+                ARDUINO FFLIGHT SIMULATOR
+                 ===============================================================-->
+                <li class="flex-item" id="Arduino-Flight-Simulator">
+                    <img src="images/teaching-arduinio-to-fly.jpg"
+                         alt="PC Joystick connected to Arduino, which controls a motion platform." />
+
+                    <h2>
+                        Teaching an Arduino to Fly <br />
+                        An Arduino-Controlled Model Flight Simulator
+                    </h2>
+
+                    <h3>Intro</h3>
+                    <p>There's lots of model airplanes, but what about a model flight simulator? This Project combines an Arduino, a joystick, a Flight Simulator running on an Android phone, and a plastic airplane model with a Lego pilot. The Arduino reads axis angle from the joystick to drive servos which change the orientation of a small motion platform. The platform has Android Phone running Infinite Flight, a flight simulator designed for mobile devices. As the platform pitches and rolls, the flight simulator responds as if the user were holding the phone. Components include Adafruit Metro (Arduino Uno clone) which drives drive 2 heavy-duty servos, capable of "lifting" the platform. The joystick is an old PC-game port type, providing analog pins that can be read like any potentiometer. .</p>
+
+                    <h3>Paper Prototype</h3>
+                    <img src="images/FS-Arduino-Paper-Proto.png"
+                         alt="Paper prototype composed of Andorid phone, rubber bands and cardboard platform balancing on pencil by hand." />
+                    <p>Paper Prototype. Simple cardboard platform balanced on a pencil to assess the degree of platform motion required for a good flying experience.  Also used to evaluate Flight Simulators and aircraft models. Infinite Flight’s A-10 proved to be fast and responsive enough for good flying, but not so skittish as to be difficult for beginners. Full video available on <a href="https://youtu.be/EByNaTV4gio">YouTube.</a> </p>
+
+                    <h3>Joystick Breakout</h3>
+                    <img class="small-leftpic" src="images/FS-Arduino-Yoke.jpg"
+                         alt="Analog Joystick breakout wires." />
+                    <p>A pair of female-to-male jumper wire ribbons directly connect PC game port joystick pins to the adafruit breadboard. No physical changes to joystick required.</p>
+
+                    <h3>Single-Axis Test</h3>
+                    <img src="images/FS-Arduino-1DOF.png"
+                         alt="PC Joystick connected to Arduino, which controls a motion platform." />
+                    <p>Joystick, Adafruit Metro, one servo, and balsawood platform to validate that servo is strong enough to move platform holding mobile phone and counterweight for balance. Full video available on <a href="https://youtu.be/BoMxHcFf9q4">YouTube.</a></p>
+
+                    <h3>Bluetooth Configuration</h3>
+                    <img src="images/FS-Arduino-Bluetooth-cfg.jpg"
+                         alt="Controlling single axis (pitch) with joystick and Arduino." />
+                    <p>Bluetooth configuration. Infinite flight can be configured to read inputs from the phone accelerometer and external Bluetooth devices simultaneously. Each flight control axis (pitch, roll, …) can be configured separately, as can numerous other controls such as flaps and landing gear. Full configuration video available on <a href="https://www.youtube.com/watch?v=6N5Xnvj19ag">YouTube.</a></p>
+
+                    <h3>Platform Construction</h3>
+                    <img src="images/FS-Arduino-Build1.jpg"
+                         alt="Initial platform construction" />
+                    <p>Final balsa wood platform with roll servo embedded in the back.  </p>
+
+                    <img src="images/FS-Arduino-Build2.jpg"
+                         alt="Adding Android phone and airplane model." />
+                    <p>Added top deck, aircraft model, and initial phone mount (later replaced). </p>
+
+                    <h3>Gimbal Construction</h3>
+                    <img src="images/FS-Arduino-Build3.jpg"
+                         alt="Building the rest of the motion platform." />
+                    <p>Pitch servo embedded in right side support post (red circle). Horizontal box frame and platform pitch together; platform rolls within frame. </p>
+
+                    <h3>Inserting image...Test flight of Completed Product</h3>
+                    <img src="images/FS-Arduino-FINISHED.png"
+                         alt=" Finished product" />
+                    <p>White flight yoke sends pitch and roll commands to Adafruit Metro (Arduino Uno equivalent) mounted to right side of frame.  Metro drives servos, moving platform.  Black game controller controls throttle, flaps, landing gear through Bluetooth, direct to Android. Full video available on <a href="https://youtu.be/M3D7SJ-Qdug">YouTube.</a></p>
+
+                    <p>For even more fun, check out the <a href="https://youtu.be/LmbXY7tFuGw">demo flight with a Pink Floyd Soundtrack</a></p>
+                </li>
+
+                <!--==============================================================
+                DEADSWITCH LIVE
+                ===============================================================-->
+                <li class="flex-item" id="HoloLens-Hackathon">
+
+                    <img src="images/HoloLensUser.jpg"
+                         alt="HoloLens User" />
+
+                    <h2>
+                        Dead Switch Live<br />
+                        A HoloLens Mixed Reality Project<br />
+                        Bringing Dead Switches to Life
+                    </h2>
+                    <h3> Intro </h3>
+                    <p>
+                        The Museum of Flight in Seattle has a few "sit in cockpit" exhibits. You can climb into an actual jet cockpit, settle into the seat, grab the stick, turn some knobs, and ... nothing happens. What if you wore a Mixed Reality headset that could "paint over" the gauges and make them come to life? What you could paint over the windshield to render the simulator world running past you, pitching and rolling as you yank and bank on the stick? What if it could be done without making any physical changes to the exhibit?
+                    </p>
+
+                    <img src="images/SR71-cockpit.jpg"
+                         alt="SR-71 cockpit." />
+
+
+                    <!-- Images are narrow here, so create a 3x3 grid-->
+                    <div class="imageContainer">
+
+                        <!-- column 1: First Physical Panel -->
+                        <div class="row1-column1">
+                            <h3 class="project">
+                                Physical Panel 1<br />
+                                The Conversation Starter
+                            </h3>
+                        </div>
+                        <div class="row2-column1">
+                            <img class="gridItem" src="images/conversation-starter.jpg"
+                                 alt="Complex Initial Panel" />
+                        </div>
+                        <div class="row3-column1">
+                            <p>
+                                I call this one "The conversation starter." Cobbled together from trips to electronics and craft stores, the green duct tape represents areas which would be "painted over" with scenery and guages. The toggle, "steering wheel", button, slider, and key are connected to absolutely nothing. The plan was to dectet hand motions and changes in switch position through HoloLens.
+                            </p>
+                        </div>
+
+                        <!-- column 2: Physical Panel 2 -->
+                        <div class="row1-column2">
+                            <h3 class="project">
+                                Physical Panel 2<br />
+                                The Reality Check
+                            </h3>
+                        </div>
+
+
+                        <div class="row2-column2">
+                            <img class="gridItem" src="images/simple-slider-HoloLens-emulator.jpg"
+                                 alt="Simple Slider with HoloLense emulator" />
+                        </div>
+                        <div class="row3-column2">
+                            <p>
+                                After a late-night <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-101e">HoloLens tutorial</a> session, it became clear that my Conversation Starter would be the <em>end</em> of my project if I tried to implement it in a day in a half.  Time to lean out the physical design until all that's left is two boxes: one for the base, one for the slider. Now I could produce a "Digital Twin" of the Simple Slider Protoype in less then an hour, spending the rest of my time in the HoloLens Emulator, getting the digital slider to move in synchrony with the physical one.
+                            </p>
+                        </div>
+                        <!-- column 3: It works! -->
+                        <div class="row1-column3">
+                            <h3 class="project"> It Works(ish)!</h3>
+                        </div>
+                        <div class="row2-column3">
+                            <img class="gridItem" src="images/SeaVR-Hololens.jpg"
+                                 alt="Physical slider with digital twin rendered by HoloLens" />
+                        </div>
+                        <div class="row3-column3">
+                            <p>
+                                Grasping for the HoloLens gestures that were fastest to learn, I latched onto Gaze for selection and Pinch for manipulation.  The red slider on the Digital Twin would move if (and only if) you stared right at it, then grasped it with a distinct pinching motion to move it. It was important let go with a pronounced opening or "unpinching" of the fingers, or the Digital button would go flying off into space as if you'd ripped it off of the panel.  The net effect was similar to operating machinery when very drunk (not that I have any expereince in the matter). Having to stare straight at switch while you painstakingly maniuplate it is a far cry from keeping your eyes on the horizon while your hands do the work.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3>So What Did I Learn?</h3>
+
+                    <p>
+                        There's nothing like a weekend Hackathon to get you to learn, design, and build fast. Whatever cool idea you start with, be ready to trim away ninety percent of it. You'll derive far more satisfaction from a low-feature prototype <em>that actually does something</em> versus a lofty slide deck and an empty code repo. The judges will appreciate it, too.
+                    </p>
+                </li>
+
+                <!--==============================================================
+                NEXT PROJECT (a commented-out template for adding more projects)
+                ===============================================================-->
+                <!--
+                <li>
+                    <h2>Project Three</h2>
+                    <p class="imagebox" style="width: 100%; height: 300px;">Project Hero Image</p>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+                </li>
+                    -->
+            </ul>
+        </main>
+
+
+        <!-- Every Page Has a Footer -->
+        <!-- flexgrid based on codepen example
+        https://codepen.io/team/css-tricks/pen/EKEYob
+        -->
+        <footer>
+            <ul class="footerContainer">
+                <li class="footerItem">©2020 Leo Salemann All rights reserved.</li>
+                <li class="footerItem">
+                    <a class="buttonLink" href="resume.html">Resume</a>
+                    <a class="footerFontAwsome"
+                       href="https://www.linkedin.com/in/leo-salemann-303293a/">
+                        <i aria-hidden="true" class="fab fa-lg fa-linkedin" title=" LinkedIn"></i>
+                    </a>
+                    <span class="sr-only">Linked In</span>
+                    <a class="buttonLink" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- */End Content Container -->
+</body>
+</html>

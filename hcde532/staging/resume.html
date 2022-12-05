@@ -1,0 +1,104 @@
+﻿<!-- HtmlView:on, console:off -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+<head prefix="og: http://ogp.me/ns#">
+    <title>Leo Salemann | Resume</title>
+    <meta name="image" content="http://students.washington.edu/leos/images/leo-headshot-tshirt-3098.jpg" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Agile Coach Portfolio with Projects, Papers, Resume, Code Repo links and LinkedIn Profile" />
+    <meta name="author" content="Leo J. Salemann" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <!-- For LinkedIn, per https://www.linkedin.com/help/linkedin/answer/46687/making-your-website-shareable-on-linkedin?lang=en -->
+    <!--
+    <meta property="og:title" content="Leo Salemann Resume" />
+    -->
+    <meta property="og:image" content="http://students.washington.edu/leos/images/leo-headshot-tshirt-3098.jpg" />
+    <!--
+    <meta property="og:description" content="Resume circa January 20, 2020" />
+
+    <meta property="og:url" content="http://students.washington.edu/leos/images/leo-headshot-tshirt-3098.jpgl"  />
+            -->
+
+
+    <link rel="stylesheet" href="http://students.washington.edu/leos/css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- begin content container -->
+    <div id="content">
+
+        <!-- Same Header for all pages-->
+        <header>
+            <!-- Small headshot, floating to left, with three lines of text on right-->
+            <a href="index.html">
+                <img class="headerImage" src="images/leo-headshot-tshirt-3098.jpg"
+                     alt="Leo's Headshot" />
+            </a>
+
+            <h1 class="headLineText">Leo Salemann</h1>
+            <h2 class="byLineText">Agile Coach, Technical Leader, Lifelong Learner</h2>
+            <p class="tagline">Helping cat-herds become wolf-packs</p>
+
+            <!-- Single-level menu-->
+            <nav>
+                <ul class="nav" id="menu-items">
+                    <li class="nav not4mobile"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="projects.html">Projects</a></li>
+                    <li class="nav"><a href="papers.html">Papers</a></li>
+                    <li class="nav not4mobile"><a href="resume.html">Resume</a></li>
+                    <li class="nav not4mobile"><a href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="code.html">Code</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Header -->
+
+        <main>
+            <h1>Resume</h1>
+            <!--
+            The Resume's the only element here, so there's no sections.
+            -->
+            <!--  From stackoverflow post "Embed PDF in mobile browsers"
+                https://stackoverflow.com/questions/36382249/embed-pdf-in-mobile-browsers
+
+                <object data='some.pdf'>
+                    <p>Oops! You don't support PDFs!</p>
+                    <p><a href="some.pdf">Download Instead</a>
+                </object>
+                -->
+
+            <object class="resume" data="pdfs/Leo-Salemann-Resume.pdf">
+                <p>Your browser's not letting me render objects as PDF</p>
+            </object>
+            <p> <!-- Use a pargraph to induce a line-break-->
+                <a href="pdfs/Leo-Salemann-Resume.pdf">Open resume in external page</a>
+            </p>
+        </main>
+
+
+        <!-- Every Page Has a Footer -->
+        <!-- flexgrid based on codepen example
+        https://codepen.io/team/css-tricks/pen/EKEYob
+        -->
+        <footer>
+            <ul class="footerContainer">
+                <li class="footerItem">©2020 Leo Salemann All rights reserved.</li>
+                <li class="footerItem">
+                    <a class="buttonLink" href="resume.html">Resume</a>
+                    <a class="footerFontAwsome"
+                       href="https://www.linkedin.com/in/leo-salemann-303293a/">
+                        <i aria-hidden="true" class="fab fa-lg fa-linkedin" title=" LinkedIn"></i>
+                    </a>
+                    <span class="sr-only">Linked In</span>
+                    <a class="buttonLink" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- */End Content Container -->
+</body>
+</html>
